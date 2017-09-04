@@ -1,0 +1,21 @@
+{
+  "name": "authentification_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "david ss",
+  "license": "ISC",
+  "dependencies": {
+    "async": "2.5.0",
+    "body-parser": "1.17.2",
+    "express": "4.15.4",
+    "mongodb": "2.2.31",
+    "mongoose": "4.11.10",
+    "passport": "0.4.0",
+    "passport-local": "1.0.0",
+    "passport-local-mongoose": "4.2.1"
+  }
+}

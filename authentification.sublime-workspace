@@ -1,0 +1,315 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"anal",
+				"analyzeData"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"resu",
+				"resultsArray"
+			],
+			[
+				"i",
+				"initial"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Authentification</title>\n\t</head>\n\t\n\t<body>\n\n\t<script type=\"text/javascript\" src=\"./index.js\"></script>\n\t</body>\n</html>",
+			"file": "index.html",
+			"file_size": 160,
+			"file_write_time": 131489840018752845,
+			"settings":
+			{
+				"buffer_size": 160,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 52,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 372.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 70.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/david/Repos/authentification_app/index.html",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/node_modules/cordova-android/RELEASENOTES.md",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/resources/android/icon/drawable-xhdpi-icon.png",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/resources/icon.png.md5",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/tabs/tabs.html",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/home/home.html",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/app/app.module.ts",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/app/main.ts",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/home/home.ts",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/about/about.ts",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/app/globals.ts",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/about/about.html",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/about/about.scss",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/www/index.html",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/contact/contact.html",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/contact/contact.scss",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/contact/contact.ts",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/package.json",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/home/home.scss",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/config.xml",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/tabs/tabs.ts",
+		"/home/david/Repos/TimeSwitch/TimeSwitch/src/pages/switch/switch.html",
+		"/home/david/Repos/dataTrainer/batching_exercise.js",
+		"/home/david/Repos/dataTrainer/db.js",
+		"/home/david/Repos/dataTrainer/index.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/david/Repos/TimeSwitch/TimeSwitch",
+			"/home/david/Repos/dataTrainer"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"java-1.x.x-openjdk",
+			"ANDROID_HOME",
+			"cordova.system.library.3",
+			"icon.png",
+			"myapp",
+			"font",
+			"ssh-rsa",
+			"?",
+			"clapping",
+			"activateLightswitch",
+			"VAR1",
+			";\n",
+			"uuid",
+			"saveRow",
+			"open()",
+			"/upload",
+			" >"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 52,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "authentification.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
