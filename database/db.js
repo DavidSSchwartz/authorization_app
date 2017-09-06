@@ -8,7 +8,9 @@ mongoose.connect('mongodb://localhost/authorization')
 
 var schema = mongoose.Schema;
 
-var rowSchema = new schema ({})
+var rowSchema = new schema ({
+	username: String
+});
 
 rowSchema.plugin(passportLocalMongoose);
 

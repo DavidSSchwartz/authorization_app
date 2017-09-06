@@ -2,24 +2,25 @@
 <html>
 	<head>
 		<title>Authentification</title>
+		<link rel= "stylesheet" type="text/css" href="../css/registration.css">
+		<link rel="stylesheet" type="text/css" href="sweetalert.css">
 	</head>
 	
-	<body>
+	<body onload="myFunction()">
 
 		<form>
-			
-			<p>Username</p>
-			<input id="user_id" type="text" name="user_id">
-			<p>Password</p>
-			<input id="user_pword" type="password" name="user_pword">
+			<p>To register please enter a valid Email Address:</p>
+			<input id="user_email" type="text" name="username" placeholder="Your Email"><p>Password</p>
+			<input id="user_pword" type="password" name="password">
 			<p>Confirm password</p>
 			<input id="user_pword2" type="password" name="user_pword" >
 			<p>Password must contain atleast 6 characters, atleast 1 number, 1 uppercase letter and 1 lowercase letter</p>
-			<button id="submitbtn">Submit</button>
 		</form>
+		<button id="registerbtn" type="button">Submit</button>
 
 
 
-	<script type="text/javascript" src="../app.js"></script>
+	<script type="text/javascript" src="../registration.js"></script>
+	<script src="sweetalert.min.js"></script>
 	</body>
 </html>

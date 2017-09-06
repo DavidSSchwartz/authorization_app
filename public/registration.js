@@ -1,13 +1,59 @@
-var user = document.getElementById('user_email');
+var username = document.getElementById('user_email');
 var register = document.getElementById('registerbtn');
 var password = document.getElementById('user_pword');
 var password2 = document.getElementById('user_pword2');
 
+function myFunction() {
+	swal({
+			title: "Welcome!",
+			text: "Enter a valid email address:",
+			type: "input",
+			closeOnConfirm: false,
+			animation: "slide-from-top"
+		},
+		function(inputValue) {
+			if (inputValue === false) return false;
+
+			if (inputValue === "") {
+				swal.showInputError("Error: Email cannot be blank!");
+				return false
+			}
+			// if (inputValue !== /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputValue)) {
+			// 	swal.showInputError("Error: You must enter a valid email address!");
+			// 	return false;
+			// }
+
+			swal({
+				title: " ",
+				text: "Please choose a password:",
+				type: "input",
+				closeOnConfirm: false
+			},
+
+			function(inputValue) {
+				if (inputValue === false) return false;
+				if (inputValue === "") {
+					swal.showInputError("Error: Password cannot be blank!")
+					return false
+				}
+				if (inputValue.length < 6) {
+					swal.showInputError("Error: Password must contain at least six characters!")
+					return false;
+				}
+
+				swal(
+					"THANKYOU!","",
+					"success"
+				)
+			});
+		});
+	};
+
+
+
+
 register.addEventListener('click', (e) => {
-
-
 	if (checkForm()) {
-		window.open('./webpage.html', '_blank');
 
 		//connect to the server
 		var xhr = new XMLHttpRequest();
@@ -23,12 +69,19 @@ register.addEventListener('click', (e) => {
 				// File(s) uploaded.
 				//uploadButton.innerHTML = 'Upload';
 				console.log(xhr.responseText)
-				
+
+				//register.href = '/registration';
+
 			} else {
 				alert('An error occurred!');
 			}
 		};
 
+
+		xhr.send(JSON.stringify({
+			username: username.value,
+			password: password.value
+		}));
 
 
 	} else {
@@ -38,8 +91,13 @@ register.addEventListener('click', (e) => {
 })
 
 function checkForm() {
-	if (user.value == "") {
-		alert("Error: Username cannot be blank!");
+	if (username.value == "") {
+		alert("Error: Email cannot be blank!");
+		user.focus();
+		return false;
+	}
+	if (username.value == /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(username)) {
+		alert("Error: You must enter a valid email address!");
 		user.focus();
 		return false;
 	}
@@ -49,7 +107,7 @@ function checkForm() {
 			password.focus();
 			return false;
 		}
-		if (password.value == user.value) {
+		if (password.value == username.value) {
 			alert("Error: Password must be different from Username!");
 			password.focus();
 			return false;
