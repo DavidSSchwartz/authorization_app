@@ -80,14 +80,12 @@ app.post('/userinfo', function(req, res, next) {
 			console.log(err);
 		}
 
-		passport.authenticate('local')(req, res, function() {
-			res.redirect('/');
-		});
+
 	});
 
 
 
-		res.send(req.body);
+	res.send(req.body);
 
 	// passport.authenticate('local', {
 	// 	successRedirect: '/',
@@ -99,7 +97,12 @@ app.post('/userinfo', function(req, res, next) {
 
 });
 
-
+app.post('/login', function(req, res, next) {
+	
+	passport.authenticate('local')(req, res, function() {
+		res.redirect('/');
+	});
+})
 
 console.log('Listening on port: ' + (process.env.PORT || 3000));
 app.listen(process.env.PORT || 3000)

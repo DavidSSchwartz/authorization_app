@@ -44,6 +44,8 @@ function myFunction() {
 						swal.showInputError("Error: Password must contain at least six characters!")
 						return false;
 					}
+
+					var password = inputValue
 					var xhr = new XMLHttpRequest();
 
 					// Open the connection.
@@ -68,14 +70,26 @@ function myFunction() {
 
 					xhr.send(JSON.stringify({
 						username: username,
-						password: inputValue
+						password: password
 					}));
+					swal({
+							title: "THANKYOU!",
+							text: "",
+							type: "success",
+							closeOnConfirm: false,
+							confirmButtonText: "Click to continue to log-in"
+						},
+						function() {
+							swal({
+								title: "Log-in",
+								text: "Email address and password:",
+								closeOnConfirm: false,
+								html: <input id="swal-input1" class="swal-input"> +
+									<input id="swal-input2" class="swal-input">
 
-					swal(
-						"THANKYOU!", "",
-						"success"
+						})
+						}
 					)
-
 				});
 		});
 };
