@@ -18,37 +18,67 @@ function myFunction() {
 				swal.showInputError("Error: Email cannot be blank!");
 				return false
 			}
+			var username = inputValue;
+			//connect to the server
+
+
 			// if (inputValue !== /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputValue)) {
 			// 	swal.showInputError("Error: You must enter a valid email address!");
 			// 	return false;
 			// }
 
 			swal({
-				title: " ",
-				text: "Please choose a password:",
-				type: "input",
-				closeOnConfirm: false
-			},
+					title: " ",
+					text: "Please choose a password:",
+					type: "input",
+					closeOnConfirm: false
+				},
 
-			function(inputValue) {
-				if (inputValue === false) return false;
-				if (inputValue === "") {
-					swal.showInputError("Error: Password cannot be blank!")
-					return false
-				}
-				if (inputValue.length < 6) {
-					swal.showInputError("Error: Password must contain at least six characters!")
-					return false;
-				}
+				function(inputValue) {
+					if (inputValue === false) return false;
+					if (inputValue === "") {
+						swal.showInputError("Error: Password cannot be blank!")
+						return false
+					}
+					if (inputValue.length < 6) {
+						swal.showInputError("Error: Password must contain at least six characters!")
+						return false;
+					}
+					var xhr = new XMLHttpRequest();
 
-				swal(
-					"THANKYOU!","",
-					"success"
-				)
-			});
+					// Open the connection.
+					xhr.open('POST', '/userinfo', true);
+
+					xhr.setRequestHeader('Content-Type', 'application/json')
+
+					// Set up a handler for when the request finishes.
+					xhr.onload = function() {
+						if (xhr.status === 200) {
+							// File(s) uploaded.
+							//uploadButton.innerHTML = 'Upload';
+							console.log(xhr.responseText)
+
+							//register.href = '/registration';
+
+						} else {
+							swal.showInputError('An error occurred!');
+						}
+					};
+
+
+					xhr.send(JSON.stringify({
+						username: username,
+						password: inputValue
+					}));
+
+					swal(
+						"THANKYOU!", "",
+						"success"
+					)
+
+				});
 		});
-	};
-
+};
 
 
 
